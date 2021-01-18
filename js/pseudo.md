@@ -1,0 +1,270 @@
+piles 
+
+pile one
+top
+1
+2
+3
+4
+5
+6
+7
+bottom
+
+pile two
+top
+8
+9
+10
+11
+12
+13
+14
+bottom
+
+pile three
+top 
+15
+16
+17
+18
+19
+20
+21
+bottom
+
+
+1PILE LEFT?
+TOP (WE CAN SEE THE BACK)
+KC
+QD
+9D
+2C
+9C
+10D
+3S
+BOTTOM(FIRST CARD DOWN)
+
+2PILE MIDDLE!
+7C 
+10H
+2S
+8C
+7S
+8S
+9S
+
+3PILE RIGHT?
+5C
+JC***
+7H
+6S
+9H
+6C
+6H
+
+WE PICK JC
+
+
+WHOLE PILE
+7C 
+10H
+2S
+8C
+7S
+8S
+9S
+5C
+JC***
+7H
+6S
+9H
+6C
+6H
+KC
+QD
+9D
+2C
+9C
+10D
+3S
+
+BUN1  
+LEFT    
+7C       
+8C       
+9S        
+7H        
+6C  
+QD
+9C
+
+
+BUN2   
+MIDDLE
+10H 
+7S 
+5C 
+6S 
+6H
+9D
+10D 
+
+
+BUN3
+RIGHT
+2S
+8S
+JC***
+9H
+KC 
+2C
+3S
+
+
+
+10H 
+7S 
+5C 
+6S 
+6H
+9D
+10D 
+2S
+8S
+JC***
+9H
+KC 
+2C
+3S
+7C       
+8C       
+9S        
+7H        
+6C  
+QD
+9C
+
+
+
+
+BUN1 LEFT
+10H
+6S
+10D
+JC***
+2C
+8C
+6C
+
+BUN 2 MIDDLE
+7S
+6H
+2S
+9H
+3S
+9S
+QD
+
+BUN3 RIGHT
+5C
+9D
+8S
+KC
+7C
+7H
+9C
+
+
+
+
+
+
+
+
+
+
+
+
+7S
+6H
+2S
+9H
+3S
+9S
+QD
+10H
+6S
+10D
+JC***
+2C
+8C
+6C
+5C
+9D
+8S
+KC
+7C
+7H
+9C
+
+
+
+
+
+
+7C 1
+8C 2
+9S 3
+7H 4
+6C 5
+QD 6
+9C 7
+2S 8
+8S 9
+JC*** 10
+
+
+1 ROUND
+FIRST
+
+SECOND 
+
+THIRD ** CARD IN THE SECOND POSITION
+
+2 ROUND
+FIRST 
+
+SECOND 
+
+THIRD ** 
+
+3ROUND
+FIRST **
+
+SECOND
+
+THIRD
+
+
+1 ROUND
+FIRST ** CARD IS IN THE LAST POSITION
+
+SECOND
+
+THIRD
+
+2 ROUND 
+FIRST
+
+SECOND **
+
+THIRD
+
+3 ROUND
+FIRST
+
+SECOND
+
+THIRD**
+

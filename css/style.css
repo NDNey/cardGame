@@ -1,0 +1,110 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 25%;
+  height: 100%;
+  border: 10px ridge rgb(206, 98, 98);
+  
+
+}
+
+.card{
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 100px;
+  height: 140px;
+  margin: 0 auto;
+  background-size: cover;
+  font-family: monospace;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2%;
+  background-repeat: no-repeat;
+  box-shadow: -5px 3px 5px 0px rgba(36, 36, 36, 0.062); 
+}
+
+/* .cardBack {
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 100px;
+  height: 140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 2%;
+  background-image: url('../img/1B.svg');
+  background-size: contain;
+  border: 1px solid black;
+} */
+
+#theFirst .card {
+  left: 8%;
+  
+}
+
+#theSecond .card {
+  left: 28%;
+}
+
+#theThird .card {
+  left: 48%;
+}
+
+#theFourth .card {
+  left: 68%;
+}
+
+#theFifth .card {
+  left: 88%;
+}
+
+
+
+#theFirst {
+  background-color: blueviolet;
+}
+
+#theSecond {
+  background-color: brown;
+}
+
+#theThird {
+  background-color: blue;
+}
+
+#theFourth {
+  background-color: chartreuse;
+}
+
+#theFifth {
+  background-color: deeppink;
+}
+#theSixth{
+  background-color: aquamarine;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
