@@ -3,108 +3,275 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* {
   box-sizing: border-box;
+  
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clear {
+clear: both;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 body{
+  margin: 0;
+  overflow: hidden;
+}
+
+
+#main {
+  
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
   height: 100vh;
-}
-
-.container {
-  width: 25%;
-  height: 100%;
-  border: 10px ridge rgb(206, 98, 98);
-  
-
-}
-
-.card{
-  border: 1px solid black;
-  border-radius: 10%;
-  width: 100px;
-  height: 140px;
-  margin: 0 auto;
-  background-size: cover;
-  font-family: monospace;
-  font-size: 150%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 2%;
+  width: 100vw;
+  background-image: url('../img/greenbackground.jpg');
+  background-position: center;
   background-repeat: no-repeat;
-  box-shadow: -5px 3px 5px 0px rgba(36, 36, 36, 0.062); 
+  background-size: cover;
+  color:rgb(222, 235, 214);
 }
 
-/* .cardBack {
-  border: 1px solid black;
-  border-radius: 10%;
-  width: 100px;
-  height: 140px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#blackout {
   position: absolute;
-  top: 2%;
-  background-image: url('../img/1B.svg');
-  background-size: contain;
-  border: 1px solid black;
-} */
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
 
-#theFirst .card {
-  left: 8%;
+#instructions{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 3vw;
+  text-align: center;
+  margin: 20vh 0;
+}
+ #theTitle {
+   font-size: 4vw;
+ }
+
+input {
+  font-size: 2vw;
+  border: 5px ridge rgb(158, 30, 30);
+  box-shadow: inset 5px 5px 10px 0 gray;
+  border-radius: 3px;
+  padding: 1vw 2vw;
+}
+
+ #containerContainer  {
+   
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+}
+
+#moreInstructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  margin: 1% 10%;
+  font-family: 'Inknut Antiqua', serif;
+  line-height: 2.5vw;
+  font-size: 2vw;
+  text-align: center;
+}
+#theGame{
+
+  height: 90%;
+  width: 100%;
+  display: flex;
+
+}
+.container {
+  width: 20%;
+  height: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all .4s;
   
 }
 
-#theSecond .card {
-  left: 28%;
-}
-
-#theThird .card {
-  left: 48%;
-}
-
-#theFourth .card {
-  left: 68%;
-}
-
-#theFifth .card {
-  left: 88%;
+#playAgain{
+  padding: 0;
+  text-align: center;
+  
+  position: absolute;
+  height: 5%;
+  width: 20%;
+  margin: 30% 40%;
 }
 
 
-
-#theFirst {
-  background-color: blueviolet;
+.card {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  
+  min-width: 54px;
+  min-height: 81.75px;
+  height: 14.1vw;
+  width: 9vw;
+  max-height: 237.25px;
+  max-width: 156px;
+  
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  justify-content: flex-start;
 }
 
-#theSecond {
-  background-color: brown;
+.front, .back {
+  position: absolute;
+  background-size: cover;
+  background-color: rgba(19, 44, 25, 0.062);
+  border: 0.1vh solid black;
+  border-radius: 8%;
+  height: 100%;
+  width: 100%;
+  
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateY(0deg);
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -o-transform: rotateY(0deg);
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  -ms-transform: rotateY(0deg);
+  transition: 1s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  
+  
+  
+  box-shadow: 5px 3px 2px 0px rgba(19, 44, 25, 0.062);
 }
 
-#theThird {
-  background-color: blue;
+.front {
+  z-index: 2;
+ 
+  
 }
 
-#theFourth {
-  background-color: chartreuse;
+.cardBoxShadow{
+  box-shadow: 5px 3px 5px 2px rgba(36, 36, 36, 0.062);
 }
 
-#theFifth {
-  background-color: deeppink;
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  
 }
-#theSixth{
-  background-color: aquamarine;
+
+.flipBack{
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
+
+.flipFront {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media only screen and (max-width: 500px){
+  #main{
+  
+  background-image: url('../img/mobilegreenbackground.jpg');
+  background-size: 100% 100%;
+}
+
+#instructions {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Inknut Antiqua', serif;
+ 
+  text-align: center;
+  margin: 40% 0 ;
+}
+#instructions p {
+  font-size: 10vw;
+}
+
+input {
+  font-size: 7vw;
+}
+
+#moreInstructions {
+  height: 200px;
+  max-height: 10vh;
+  font-size: 4.5vw;
+  line-height: 7vw;
+  margin: 5vw 5vw 2vh 5vw;
+}
+#theGame{
+
+  height: 85%;
+  width: 100%;
+  display: flex;
+
+}
+.container {
+  border: 1px solid rgba(187, 175, 175, 0.336);
+}
+
+}
+
+.hidden {
+  display: none !important;
+}
+

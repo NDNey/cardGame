@@ -1,12 +1,13 @@
-const cardFaces = ['1J.svg', '2J.svg', 'headshot1.jpg']
+const cardFaces = ['1J.svg', '2J.svg', '2B.svg']
 
 for (let i = 0; i <= 3; i++) {
+    
     if(i === 0){
         cardSuit = 'C'
     }else if( i === 1){
         cardSuit = 'S'
     }else if( i === 2){
-        cardSuit === 'D'
+        cardSuit = 'D'
     }else if( i === 3){
         cardSuit = 'H'
     }
@@ -28,10 +29,244 @@ for (let i = 0; i <= 3; i++) {
         }
         cardFaces.push(`${cardName}${cardSuit}.svg`)
         cardNumber += 1
-
+        console.log(cardSuit)
     }
 }
 
+// const htmlReset = `<input type="submit" id="playAgain" class="hidden" value="Play Again" />
+//         <section id="theFirst" class="container">
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="one card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//         </section>
+
+//         <section id="theSecond" class="container">
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="two card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//         </section>
+//         <section id="theThird" class="container">
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="three card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//         </section>
+
+//         <section id="theFourth" class="container">
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="four card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//         </section>
+
+//         <section id="theFifth" class="container">
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//           <section class="five card">
+//             <section class="front"></section>
+//             <section class="back"></section>
+//           </section>
+//         </section>`
 
 /*
 4 suits  C D S H
