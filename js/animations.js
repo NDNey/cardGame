@@ -87,7 +87,7 @@ function cascade(pile) {
 function spreadTheCards(e, direction, fill, duration) {
   let x = 17;
 
-  for (let i = 1; i <= e.length - 1; i++) {
+  for (let i = 0; i < e.length ; i++) {
     e[i].animate([{ top: `${x}%` }], {
       duration: duration,
       fill: fill,
