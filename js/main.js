@@ -92,6 +92,7 @@ function startTheGame() {
 
 function startTheGameAgain(deck) {
   //empty array is filled with the columns and their contents
+ 
   let x = 0
   for (let i = 0; i < deck.length ; i++) {
     if (i >= 0 && i % 11 === 0) {
@@ -130,13 +131,13 @@ function playTheGameAgain() {
 
 
   doABlackOut(main)
+ 
   setTimeout(() => {
 
 
   }, 1000);
 
   setTimeout(() => {
-    // theGame.innerHTML = htmlReset;
     location.reload()
     everyCard = Array.from(document.querySelectorAll(".card"));
     startTheGameAgain(everyCard)
@@ -149,6 +150,7 @@ function playTheGameAgain() {
 //position is bottom
 //deal all cards and then flip
 function initialize(x) {
+  document.getElementById('main').style.backgroundImage ="url(../img/greenbackground.jpg)"
   setCardStartingPlace(x);
 
   setTimeout(() => {
@@ -166,6 +168,7 @@ function initialize(x) {
 }
 
 function reInitialize(x) {
+  
   setCardPlace(x);
 
   setTimeout(() => {
@@ -434,6 +437,6 @@ function giveInstruction(n) {
         ? `OK, click the column your card is in again, please\n (be honest)`
         : n === 2
           ? `Now...\n one more time...\n click the column your card is in.`
-          : "Is this your card... ?";
+          : "This is your card!";
   moreInstructions.innerText = instruction;
 }
