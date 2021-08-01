@@ -65,20 +65,6 @@ function dealTheStartingCards(card, top, lefty, delay) {
     }
   );
 }
-/******************************************************************************* */
-//im not sure if we use or need this function anymore
-function cascade(pile) {
-  let top = 20;
-  for (let i = 0; i < pile.length; i++) {
-    pile[i].animate([{ top: `${top}%` }], {
-      duration: 500,
-      fill: "forwards",
-      iterations: 1,
-      easing: "ease-out",
-    });
-    top += 7;
-  }
-}
 
 /************************************************************************** */
 // can we use this function for bringing a single pile down to the bottom?

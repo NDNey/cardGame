@@ -50,9 +50,9 @@ function makeAnArrayOfContainers() {
 //(()()()()())
 function makeCardsHaveFaces(e) {
   for (let i = 0; i < e.length ; i++) {
-    e[i].children[0].style.backgroundImage = `url(./img/${randomizedCardFaces[i]})`;
-    e[i].children[1].style.backgroundImage = `url('./img/1B.svg')`;
-    e[i].setAttribute("name", `url(./img/${randomizedCardFaces[i]})`);
+    e[i].children[0].style.backgroundImage = `url(./imgTwo/${randomizedCardFaces[i]})`;
+    e[i].children[1].style.backgroundImage = `url('./imgTwo/1B.svg')`;
+    e[i].setAttribute("name", `url(./imgTwo/${randomizedCardFaces[i]})`);
   }
 }
 
@@ -432,9 +432,9 @@ function theReveal(e) {
 function giveInstruction(n) {
   let instruction =
     n === 0
-      ? `Choose a card - DON'T TELL ME - and keep it in mind.\n Now, click the column your card is in`
+      ? `Choose a card - remember your card and keep it in mind.\n Now, click the column your card is in.`
       : n === 1
-        ? `OK, click the column your card is in again, please\n (be honest)`
+        ? `Ok, click the column your card is in again.`
         : n === 2
           ? `Now...\n one more time...\n click the column your card is in.`
           : "This is your card!";
