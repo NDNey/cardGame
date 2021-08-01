@@ -49,7 +49,7 @@ function makeAnArrayOfContainers() {
 //thisa function should be renamed to setUpTheCards and the two loops in the onloadfunction above should be added
 //(()()()()())
 function makeCardsHaveFaces(e) {
-  for (let i = 0; i < e.length ; i++) {
+  for (let i = 0; i < e.length; i++) {
     e[i].children[0].style.backgroundImage = `url(./imgTwo/${randomizedCardFaces[i]})`;
     e[i].children[1].style.backgroundImage = `url('./imgTwo/1B.svg')`;
     e[i].setAttribute("name", `url(./imgTwo/${randomizedCardFaces[i]})`);
@@ -67,7 +67,7 @@ function startTheGame() {
     everyCard[i].children[1].classList.add("flipBack");
   }
 
-  for (let i = 0; i < everyCard.length ; i++) {
+  for (let i = 0; i < everyCard.length; i++) {
     everyCard[i].animate([{ top: "110%" }], {
       duration: 10,
       fill: "both",
@@ -87,14 +87,12 @@ function startTheGame() {
     //runs the starting animation
     initialize(everyCard);
   }, 2200);
-
 }
 
 function startTheGameAgain(deck) {
   //empty array is filled with the columns and their contents
- 
   let x = 0
-  for (let i = 0; i < deck.length ; i++) {
+  for (let i = 0; i < deck.length; i++) {
     if (i >= 0 && i % 11 === 0) {
       x++
     }
@@ -102,11 +100,11 @@ function startTheGameAgain(deck) {
 
   }
   makeCardsHaveFaces(document.querySelectorAll(".card"));
-  for (let i = 0; i < everyCard.length ; i++) {
+  for (let i = 0; i < everyCard.length; i++) {
     everyCard[i].children[0].classList.add("flipFront");
     everyCard[i].children[1].classList.add("flipBack");
   }
-  for (let i = 0; i < everyCard.length ; i++) {
+  for (let i = 0; i < everyCard.length; i++) {
     everyCard[i].animate([{ top: "110%" }], {
       duration: 10,
       fill: "both",
@@ -128,10 +126,8 @@ function playTheGameAgain() {
   canWeClick = false
   arrayOfContainers = [[], [], [], [], []];
   count = 0
-
-
   doABlackOut(main)
- 
+
   setTimeout(() => {
 
 
@@ -150,7 +146,7 @@ function playTheGameAgain() {
 //position is bottom
 //deal all cards and then flip
 function initialize(x) {
-  document.getElementById('main').style.backgroundImage ="url(../img/greenbackground.jpg)"
+  document.getElementById('main').style.backgroundImage = "url(../img/greenbackground.jpg)"
   setCardStartingPlace(x);
 
   setTimeout(() => {
@@ -161,14 +157,14 @@ function initialize(x) {
   }, 4000);
 
   setTimeout(() => {
-    for (let i = 0; i < arrayOfContainers.length ; i++) {
+    for (let i = 0; i < arrayOfContainers.length; i++) {
       spreadTheCards(arrayOfContainers[i], "normal", "both", 1000);
     }
   }, 4600);
 }
 
 function reInitialize(x) {
-  
+
   setCardPlace(x);
 
   setTimeout(() => {
@@ -179,7 +175,7 @@ function reInitialize(x) {
   }, 4000);
 
   setTimeout(() => {
-    for (let i = 0; i < arrayOfContainers.length ; i++) {
+    for (let i = 0; i < arrayOfContainers.length; i++) {
       spreadTheCards(arrayOfContainers[i], "normal", "both", 1000);
     }
   }, 4600);
@@ -224,7 +220,7 @@ function doStuff(e) {
   let googa = 0;
   const anInterval = setInterval(() => {
     if (googa === 0) {
-      for (let i = 0; i < arrayOfContainers.length ; i++) {
+      for (let i = 0; i < arrayOfContainers.length; i++) {
         goBackTheCards(arrayOfContainers[i], "normal", "forwards");
       }
     } else if (googa === 10) {
@@ -232,7 +228,7 @@ function doStuff(e) {
         flipThePilesOver(arrayOfContainers[i]);
       }
     } else if (googa === 16) {
-      for (let i = 0; i < arrayOfContainers.length ; i++) {
+      for (let i = 0; i < arrayOfContainers.length; i++) {
         x =
           10 -
           arrayOfContainers[0][0].offsetWidth / 2 / (window.innerWidth / 100) +
@@ -261,7 +257,7 @@ function doStuff(e) {
 
     } else if (googa === 112) {
       giveInstruction(count);
-      for (let i = 0; i < arrayOfContainers.length ; i++) {
+      for (let i = 0; i < arrayOfContainers.length; i++) {
         spreadTheCards(arrayOfContainers[i], "normal", "both", 1000);
       }
       if (count < 2) {
@@ -405,7 +401,7 @@ function theReveal(e) {
         flipThePilesOver(arrayOfContainers[i]);
       }
     } else if (googa === 16) {
-      for (let i = 0; i < arrayOfContainers.length ; i++) {
+      for (let i = 0; i < arrayOfContainers.length; i++) {
         x =
           10 -
           arrayOfContainers[0][0].offsetWidth / 2 / (window.innerWidth / 100) +
