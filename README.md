@@ -1,5 +1,5 @@
 # Gues My Card Game
-This is a guessing algorithm that will tell you the card you have in mine in three clicks. Follow the Instructions and have fun.
+This is an algorithm that will tell you the card you have in mine in three clicks. Follow the Instructions and have fun.
 
 Try online at [Guess My Card Game](https://guessmycard.netlify.app/)!
 <article>
