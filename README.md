@@ -20,6 +20,4 @@ Try online at [Guess My Card Game](https://guessmycard.netlify.app/)!
 
 A game that uses an algorithm to guess the card the player has in mine in three clicks. It was created using HTML,CSS, and JAVASCRIPT while learning functional programing and CSS animation with Javascript.
 
-## Lessons Learned:
-
-If you have an idea, it will be possible to make it work in different ways. It may not be the ideal or cleanest way but you can always come back and refactor your code.
+ 
